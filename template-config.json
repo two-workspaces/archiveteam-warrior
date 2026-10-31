@@ -1,7 +1,7 @@
 {
   "services": {
     "f3df09da-9f3d-4f02-b388-a8cf099d1dde": {
-      "icon": "https://avatars.githubusercontent.com/u/774774?v=4",
+      "icon": "https://raw.githubusercontent.com/ArchiveTeam/seesaw-kit/development/seesaw/public/favicon-256.png",
       "name": "Warrior",
       "build": {},
       "deploy": {
