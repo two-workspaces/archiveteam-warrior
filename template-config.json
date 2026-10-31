@@ -1,0 +1,55 @@
+{
+  "services": {
+    "f3df09da-9f3d-4f02-b388-a8cf099d1dde": {
+      "icon": "https://avatars.githubusercontent.com/u/774774?v=4",
+      "name": "Warrior",
+      "build": {},
+      "deploy": {
+        "startCommand": null,
+        "healthcheckPath": null,
+        "restartPolicyType": "ALWAYS",
+        "restartPolicyMaxRetries": 10
+      },
+      "source": {
+        "image": "ghcr.io/two-workspaces/archiveteam-warrior:PENDING"
+      },
+      "variables": {
+        "DOWNLOADER": {
+          "defaultValue": "",
+          "description": "Your nickname on the ArchiveTeam leaderboards (tracker.archiveteam.org). No spaces or emails.",
+          "isOptional": false
+        },
+        "SELECTED_PROJECT": {
+          "defaultValue": "auto",
+          "description": "auto lets ArchiveTeam point your Warrior at the most urgent project. Or name one, e.g. reddit or telegram.",
+          "isOptional": false
+        },
+        "CONCURRENT_ITEMS": {
+          "defaultValue": "2",
+          "description": "Items worked on at once (1-6). More uses more RAM and bandwidth.",
+          "isOptional": false
+        },
+        "HTTP_USERNAME": {
+          "defaultValue": "admin",
+          "description": "Username for the Warrior web dashboard",
+          "isOptional": false
+        },
+        "HTTP_PASSWORD": {
+          "defaultValue": "${{secret(20, \"abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789\")}}",
+          "description": "Password for the Warrior web dashboard - without it anyone with the URL could change your settings",
+          "isOptional": false
+        },
+        "PORT": {
+          "defaultValue": "8001",
+          "description": "Port of the Warrior dashboard - leave as is",
+          "isOptional": false
+        }
+      },
+      "networking": {
+        "serviceDomains": {
+          "<hasDomain>": {}
+        }
+      }
+    }
+  }
+}

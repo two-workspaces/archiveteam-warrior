@@ -1,0 +1,11 @@
+{
+  "name": "ArchiveTeam Warrior | Help Archive the Web Before It Disappears",
+  "short_name": "ArchiveTeam Warrior Node",
+  "description": "ArchiveTeam Warrior: archive at-risk sites to the Internet Archive",
+  "category": "Other",
+  "image": "https://avatars.githubusercontent.com/u/774774?v=4",
+  "card_desc": "The official ArchiveTeam Warrior: grabs pages from websites about to shut down and uploads them for the Wayback Machine, with a password-protected dashboard and your nickname on the leaderboard.",
+  "deploy_marker": "two-workspaces/archiveteam-warrior",
+  "published": false,
+  "id": "d46798cb-87bc-42e6-bd63-c135dea2279f"
+}
